@@ -1,0 +1,10 @@
+.top-bar {
+    height: 250px;
+    background-color: #E6C1F6;
+}
+
+.header-img {
+    margin-top: 50px;
+    height: auto;
+    border-radius: 500px;
+}
