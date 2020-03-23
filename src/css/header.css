@@ -1,6 +1,6 @@
-.header-top-bar {
-    height: 300px;
-    background-color: #E6C1F6;
+h1, h2 {
+    color: rgb(250, 237, 139);
+    font-weight: bold;
 }
 
 #header-img {
@@ -9,3 +9,18 @@
     margin-top: 35px;
     padding: 0;
 }
+
+#header-info-outer-container {
+    padding-left: 50px;
+    margin-top: 75px;
+}
+
+.header-top-bar {
+    background-color: rgb(116, 202, 255);
+    height: 300px;
+}
+
+.header-title {
+    padding-top: 35px;
+}
+
