@@ -4,8 +4,11 @@ import '../css/header.css';
 function Header() {
     return (
         <Fragment>
-            <div className="top-bar">
-                <img className="header-img col-md-3 col-xs-4 vert-align" src="src/resources/headshot.jpg"/>
+            <div className="header-top-bar">
+                <div className="row">
+                    <div className="col-md-1"/>
+                    <img id="header-img" className="col-md-3 col-xs-4 vert-align" src="src/resources/headshot.jpg"/>
+                </div>
             </div>
         </Fragment>
     );
