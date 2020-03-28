@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Menu from './menu';
 import '../css/header.css';
 
 function Header() {
@@ -15,6 +16,9 @@ function Header() {
                             <h3 className="header-title text-muted">Software Engineer</h3>
                             <h4 className="text-muted">📍Chicago, IL</h4>
                         </div>
+                    </div>
+                    <div className="col-md-6">
+                        <Menu/>
                     </div>
                 </div>
             </div>
