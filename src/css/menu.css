@@ -1,0 +1,11 @@
+.menu-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-right: 100px;
+}
+
+.menu-item {
+    font-size: 25px;
+    border: 7px solid white;
+}
