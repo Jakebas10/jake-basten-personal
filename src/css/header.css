@@ -1,8 +1,3 @@
-h1, h2 {
-    color: rgb(250, 237, 139);
-    font-weight: bold;
-}
-
 #header-img {
     border: 7px solid white;
     border-radius: 500px;
@@ -14,6 +9,11 @@ h1, h2 {
 
 #header-info-outer-container {
     margin-top: 75px;
+}
+
+.full-name {
+    color: rgb(250, 237, 139);
+    font-weight: bold;
 }
 
 .header-top-bar {
