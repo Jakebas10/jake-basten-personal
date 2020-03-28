@@ -6,9 +6,10 @@ function Header() {
         <Fragment>
             <div className="header-top-bar">
                 <div className="row">
-                    <div className="col-md-1"/>
-                    <img id="header-img" className="col-md-3 col-xs-4 vert-align" src="src/resources/headshot.jpg"/>
-                    <div id="header-info-outer-container" className="col-md-3 col-xs-4 vert-align">
+                    <div className="col-md-3 col-xs-4">
+                        <img id="header-img" className="col-md-8 col-xs-4" src="src/resources/headshot.jpg"/>
+                    </div>
+                    <div id="header-info-outer-container" className="col-md-3 col-xs-4 float-left">
                         <h1>Jake Basten</h1>
                         <div>
                             <h3 className="header-title text-muted">Software Engineer</h3>
