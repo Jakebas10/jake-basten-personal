@@ -1,13 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import AppContainer from './components/AppContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/index.css';
+import Header from './components/Header';
+import About from './components/About';
 
 class App extends Component {
-    render(){
-        return(
-            <AppContainer/>
+    render() {
+        return (
+            <Fragment>
+                <Header />
+                <div className="content-container">
+                    <About/>
+                </div>
+            </Fragment>
         )
     }
 }

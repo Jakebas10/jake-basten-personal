@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 
-function About() {
+function Blog() {
     return(
         <Fragment>
-            <h1>About Me</h1>
+            <h1>Blog</h1>
             <div>some content</div>
         </Fragment>
     );
 }
 
-export default About;
+export default Blog;

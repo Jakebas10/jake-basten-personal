@@ -8,7 +8,7 @@ function Header() {
             <div className="header-top-bar">
                 <div className="row">
                     <div className="col-md-3 col-xs-4">
-                        <img id="header-img" className="col-md-8 col-xs-4" src="src/resources/headshot.jpg"/>
+                        <img id="header-img" className="col-md-8 col-xs-4" src="src/resources/headshot.jpg" />
                     </div>
                     <div id="header-info-outer-container" className="col-md-3 col-xs-4 float-left">
                         <h1 className="full-name">Jake Basten</h1>
@@ -18,7 +18,7 @@ function Header() {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <Menu/>
+                        <Menu />
                     </div>
                 </div>
             </div>
