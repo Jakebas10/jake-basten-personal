@@ -18,7 +18,7 @@ function Header() {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <Menu />
+                        <Menu/>
                     </div>
                 </div>
             </div>
