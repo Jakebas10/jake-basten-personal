@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import History from './History';
 import '../css/menu.css';
 
 class Menu extends Component {
@@ -24,7 +25,7 @@ class Menu extends Component {
         if (!hasActiveRount) {
             const firstItem = menuItems[0];
             firstItem.active = 'active';
-            history.pushState(null, '', '/' + firstItem.name.toLowerCase());
+            History.push('/' + firstItem.name.toLowerCase());
         }
 
         this.state = {
@@ -40,7 +41,7 @@ class Menu extends Component {
         );
 
         this.setState({ menuItems: newItems });
-        history.pushState(null, '', '/' + name.toLowerCase());
+        History.push('/' + name.toLowerCase());
     }
 
     render() {
