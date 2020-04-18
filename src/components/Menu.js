@@ -7,10 +7,25 @@ class Menu extends Component {
         super(props);
 
         let menuItems = [
-            { name: 'About', active: 'active' },
+            { name: 'About', active: '' },
             { name: 'Blog', active: '' },
             { name: 'Resume', active: '' }
-        ]
+        ];
+
+        const currentRoute = window.location.pathname.replace('/', '');
+        let hasActiveRount = false;
+        menuItems.map(item => {
+            if (item.name.toLowerCase() === currentRoute.toLowerCase()) {
+                item.active = 'active';
+                hasActiveRount = true;
+                return;
+            }
+        });
+        if (!hasActiveRount) {
+            const firstItem = menuItems[0];
+            firstItem.active = 'active';
+            history.pushState(null, '', '/' + firstItem.name.toLowerCase());
+        }
 
         this.state = {
             menuItems: menuItems
@@ -33,7 +48,7 @@ class Menu extends Component {
             <div className="menu-container">
                 <ul className="nav nav-tabs nav-fill">
                     {this.state.menuItems.map(item =>
-                        <li className="nav-item">
+                        <li key={item.name} className="nav-item">
                             <div className={"nav-link menu-item " + item.active} onClick={this.changeActive.bind(this, item.name)}>
                                 {item.name}
                             </div>
