@@ -7,7 +7,7 @@ function Header() {
         <Fragment>
             <div className="header-top-bar">
                 <div className="header-row row">
-                    <div className="col-md-3">
+                    <div className="col-md-3 col-sm-0">
                         <img id="header-img" className="col-md-8" src="src/resources/headshot.jpg" />
                     </div>
                     <div id="header-info-outer-container" className="col-md-3 float-left">

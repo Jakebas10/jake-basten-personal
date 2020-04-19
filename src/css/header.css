@@ -33,14 +33,14 @@
     position: relative;
 }
 
-@media screen and (min-width: 788px) and (max-width: 1028px) {
+@media screen and (min-width: 768px) and (max-width: 1028px) {
     #header-info-outer-container {
         margin-top: 30px;
     }
 
     #header-img {
         margin-top: 30px;
-        right: 10px;
+        right: 0px;
     }
 
     .header-menu {
@@ -61,9 +61,28 @@
     }
 }
 
-@media screen and (max-width: 788px) {
-    .header-top-bar {
-        background-color: red;
+@media screen and (max-width: 768px) {
+    #header-info-outer-container {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #header-img {
+        visibility: hidden;
+    }
+
+    .header-title {
+        padding-top: 0px;
+        font-size: 1.25rem;
+    }
+
+    .header-loc {
+        font-size: 1.25rem;
+    }
+
+    .full-name {
+        font-size: 1.25rem;
     }
 }
 
